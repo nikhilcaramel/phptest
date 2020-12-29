@@ -69,7 +69,7 @@
 </fileset> -->
 </apply>
 <property name="lint.done" value="true"/>
-</target> -->
+</target> 
 <target name="phploc" unless="phploc.done" description="Measure project size using PHPLOC and print human readable output. Intended for usage on the command line.">
 <exec executable="${phploc}" taskname="phploc">
 <arg value="--count-tests"/>
