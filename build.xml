@@ -56,7 +56,7 @@
 <mkdir dir="${basedir}/build/phpdox"/>
 <property name="prepare.done" value="true"/>
 </target>
- /*<target name="lint" unless="lint.done" description="Perform syntax check of sourcecode files">
+ <!-- <target name="lint" unless="lint.done" description="Perform syntax check of sourcecode files">
 <apply executable="php" taskname="lint">
 <arg value="-l"/>
 <fileset dir="${basedir}/src">
@@ -69,7 +69,7 @@
 </fileset>
 </apply>
 <property name="lint.done" value="true"/>
-</target>*/
+</target> -->
 <target name="phploc" unless="phploc.done" description="Measure project size using PHPLOC and print human readable output. Intended for usage on the command line.">
 <exec executable="${phploc}" taskname="phploc">
 <arg value="--count-tests"/>
